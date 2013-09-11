@@ -1,8 +1,8 @@
-#N canvas 104 144 1317 714 10;
+#N canvas 102 149 1317 714 10;
 #X declare -path /home/hellocatfood/pd-externals/hellocatfood;
 #X obj 173 595 pix_texture;
 #X obj 174 704 scaleXYZ;
-#N canvas 65 238 450 300 waves 0;
+#N canvas 1290 588 450 300 waves 0;
 #X obj 100 50 cnv 15 80 40 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #X msg 134 200 1;
@@ -36,7 +36,7 @@
 #X connect 14 0 13 0;
 #X connect 15 0 7 0;
 #X coords 0 -1 1 1 80 40 1 100 50;
-#X restore 173 621 pd waves;
+#X restore 194 636 pd waves;
 #X obj 174 724 t a b;
 #N canvas 280 255 450 300 window 0;
 #X obj 436 626 world_light;
@@ -142,49 +142,49 @@
 #X obj -65 271 env~ 1024;
 #X floatatom -65 323 5 0 0 0 - - -;
 #X obj 607 152 vsl 15 80 0 1 0 0 env1 empty empty 0 -9 0 10 -257985
--1 -1 7863 1;
+-1 -1 0 1;
 #X obj -65 369 line;
 #X obj -65 296 dbtorms;
 #X obj 15 271 env~ 1024;
 #X floatatom 15 323 5 0 0 0 - - -;
 #X obj 627 152 vsl 15 80 0 1 0 0 env2 empty empty 0 -9 0 10 -257985
--1 -1 2373 1;
+-1 -1 0 1;
 #X obj 15 369 line;
 #X obj 15 296 dbtorms;
 #X obj 95 271 env~ 1024;
 #X floatatom 95 323 5 0 0 0 - - -;
 #X obj 647 152 vsl 15 80 0 1 0 0 env3 empty empty 0 -9 0 10 -257985
--1 -1 1905 1;
+-1 -1 0 1;
 #X obj 95 369 line;
 #X obj 95 296 dbtorms;
 #X obj 185 271 env~ 1024;
 #X floatatom 185 323 5 0 0 0 - - -;
 #X obj 668 152 vsl 15 80 0 1 0 0 env4 empty empty 0 -9 0 10 -257985
--1 -1 1785 1;
+-1 -1 0 1;
 #X obj 185 369 line;
 #X obj 185 296 dbtorms;
 #X obj 265 271 env~ 1024;
 #X floatatom 265 323 5 0 0 0 - - -;
 #X obj 687 152 vsl 15 80 0 1 0 0 env5 empty empty 0 -9 0 10 -257985
--1 -1 1776 1;
+-1 -1 0 1;
 #X obj 265 369 line;
 #X obj 265 296 dbtorms;
 #X obj 345 271 env~ 1024;
 #X floatatom 345 323 5 0 0 0 - - -;
 #X obj 707 152 vsl 15 80 0 1 0 0 env6 empty empty 0 -9 0 10 -257985
--1 -1 1777 1;
+-1 -1 0 1;
 #X obj 345 369 line;
 #X obj 345 296 dbtorms;
 #X obj 435 271 env~ 1024;
 #X floatatom 435 323 5 0 0 0 - - -;
 #X obj 727 152 vsl 15 80 0 1 0 0 env7 empty empty 0 -9 0 10 -257985
--1 -1 1781 1;
+-1 -1 0 1;
 #X obj 435 369 line;
 #X obj 435 296 dbtorms;
 #X obj 515 271 env~ 1024;
 #X floatatom 515 323 5 0 0 0 - - -;
 #X obj 747 152 vsl 15 80 0 1 0 0 env8 empty empty 0 -9 0 10 -257985
--1 -1 2830 1;
+-1 -1 0 1;
 #X obj 515 369 line;
 #X obj 515 296 dbtorms;
 #X obj 176 138 *~;
@@ -215,7 +215,7 @@
 #X obj 850 280 outlet;
 #X obj 176 78 adc~;
 #X obj 610 120 hsl 150 15 0.01 10 0 0 empty empty empty -2 -8 0 10
--260097 -1 -1 12177 1;
+-260097 -1 -1 1477 1;
 #X text 607 100 Microphone sensitivity;
 #X text 607 240 Adjust sensitivity;
 #X obj 210 634 *~ 0;
@@ -342,7 +342,7 @@
 #X obj 78 166 r xpos;
 #X obj 55 216 rotateXYZ 180 0 0;
 #X obj 206 141 vsl 15 100 -5 5 0 0 empty empty empty 0 -9 0 10 -260097
--1 -1 1000 1;
+-1 -1 0 1;
 #X obj 135 156 line;
 #X obj 55 296 rotateXYZ;
 #X obj 55 357 pix_texture;
@@ -360,12 +360,12 @@
 #X obj 115 606 f;
 #X obj 55 546 repeat 10;
 #X obj 239 139 hsl 50 15 0.01 3 0 0 spacing empty empty -2 -8 0 10
--260097 -1 -1 2000 1;
+-260097 -1 -1 0 1;
 #X obj 239 179 hsl 50 15 0 15 0 0 ppos empty empty -2 -8 0 10 -260097
--1 -1 1600 1;
+-1 -1 0 1;
 #X text 234 155 spacing;
 #X obj 239 219 hsl 50 15 -15 5 0 0 xpos empty empty -2 -8 0 10 -260097
--1 -1 2500 1;
+-1 -1 0 1;
 #N canvas 625 163 450 300 poly 0;
 #N canvas 301 184 450 309 p1 0;
 #X obj 124 111 * 3;
@@ -1111,7 +1111,7 @@
 #X text 303 236 rotate;
 #X obj 55 136 gemhead 150;
 #X obj 55 466 gemhead 160;
-#X obj 206 109 tgl 15 0 empty empty empty 17 7 0 10 -258113 -1 -1 1
+#X obj 206 109 tgl 15 0 empty empty empty 17 7 0 10 -258113 -1 -1 0
 1;
 #X text 224 106 render;
 #X obj 206 56 loadbang;
@@ -1170,45 +1170,45 @@
 #X connect 48 0 5 0;
 #X coords 0 -1 1 1 160 160 2 200 100;
 #X restore 623 445 pd polys;
-#N canvas 345 142 702 640 feedback 0;
-#X obj 500 250 cnv 15 110 195 empty empty empty 20 12 0 14 -233017
+#N canvas 780 369 702 640 feedback 0;
+#X obj 500 250 cnv 15 180 195 empty empty empty 20 12 0 14 -233017
 -66577 0;
-#X obj 274 230 pix_texture;
-#X msg 367 152 snap;
-#X obj 274 128 render_trigger;
-#X obj 274 460 rotateXYZ;
-#X obj 274 410 translateXYZ;
-#X obj 504 275 grid grid1 100 0 10 100 0 10 0 0.1 0.1 10 10 604 313
+#X obj 64 230 pix_texture;
+#X msg 157 152 snap;
+#X obj 64 128 render_trigger;
+#X obj 64 460 rotateXYZ;
+#X obj 64 410 translateXYZ;
+#X obj 504 275 grid grid1 100 0 10 100 0 10 0 0.1 0.1 10 10 553 326
 ;
-#N canvas 67 113 450 300 translated 0;
+#N canvas 65 118 450 300 translated 0;
 #X obj 119 196 line;
-#X msg 119 176 \$1 100;
 #X obj 192 196 line;
-#X msg 192 176 \$1 100;
 #X obj 119 156 inlet;
 #X obj 192 156 inlet;
 #X obj 119 236 outlet;
 #X obj 192 236 outlet;
 #X obj 119 216 - 5;
 #X obj 192 216 - 5;
-#X connect 0 0 8 0;
-#X connect 1 0 0 0;
+#X msg 192 176 \$1 25;
+#X msg 119 176 \$1 25;
+#X connect 0 0 6 0;
+#X connect 1 0 7 0;
 #X connect 2 0 9 0;
-#X connect 3 0 2 0;
-#X connect 4 0 1 0;
-#X connect 5 0 3 0;
-#X connect 8 0 6 0;
-#X connect 9 0 7 0;
-#X restore 297 380 pd translated;
-#X obj 508 405 hsl 60 15 -10 10 0 0 empty empty empty -2 -8 0 10 -260097
--1 -1 3835 1;
+#X connect 3 0 8 0;
+#X connect 6 0 4 0;
+#X connect 7 0 5 0;
+#X connect 8 0 1 0;
+#X connect 9 0 0 0;
+#X restore 87 380 pd translated;
+#X obj 508 405 hsl 60 15 0 2 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 2600 1;
 #X obj 508 385 hsl 60 15 0 360 0 0 empty empty empty -2 -8 0 10 -260097
--1 -1 0 1;
+-1 -1 2800 1;
 #X text 570 384 rotate;
-#X obj 274 580 spigot;
-#X obj 505 425 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+#X obj 64 580 spigot;
+#X obj 505 425 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 1 1
 ;
-#X obj 274 250 separator;
+#X obj 64 250 separator;
 #X obj 504 255 tgl 15 0 empty empty empty 17 7 0 10 -258113 -1 -1 1
 1;
 #X text 570 403 size;
@@ -1221,28 +1221,38 @@
 #X obj 577 177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 575 156 sel 101;
-#X obj 297 151 gemhead 100;
-#X obj 274 104 gemhead -1;
-#X obj 272 600 sphere 6;
-#X obj 631 361 inlet;
-#X obj 274 199 pix_snap 0 0 1440 900;
-#X obj 293 530 rectangle 5.3 3;
-#X obj 123 175 vradio 15 1 0 2 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X text 141 173 4/3;
-#X text 141 188 16/9;
+#X obj 87 151 gemhead 100;
+#X obj 64 104 gemhead -1;
+#X obj 62 600 sphere 6;
+#X obj 614 276 vradio 15 1 0 3 empty empty empty 0 -8 0 10 -262144
+-1 -1 2;
+#X text 632 274 4/3;
+#X text 632 289 16/9;
+#X obj 204 500 * 1;
+#X obj 261 500 * 1;
+#X obj 83 530 rectangle;
+#X obj 64 199 pix_snap 0 0 500 500;
+#X text 632 304 4/4;
+#X obj 204 440 unpack f f;
+#X obj 204 340 sel 0 1 2;
+#X msg 204 370 4 3;
+#X msg 221 390 5.3 3;
+#X msg 238 410 4 4;
+#X floatatom 204 470 5 0 0 0 - - -;
+#X floatatom 261 470 5 0 0 0 - - -;
+#X obj 284 440 t b b f f;
 #X connect 1 0 13 0;
-#X connect 2 0 28 0;
-#X connect 3 0 28 0;
+#X connect 2 0 33 0;
+#X connect 3 0 33 0;
 #X connect 3 2 2 0;
 #X connect 4 0 11 0;
-#X connect 4 0 29 0;
+#X connect 4 0 32 0;
 #X connect 5 0 4 0;
 #X connect 6 0 7 0;
 #X connect 6 1 7 1;
 #X connect 7 0 5 1;
 #X connect 7 1 5 2;
-#X connect 8 0 29 1;
+#X connect 8 0 42 0;
 #X connect 9 0 4 3;
 #X connect 11 0 26 0;
 #X connect 12 0 11 1;
@@ -1257,13 +1267,28 @@
 #X connect 21 0 23 0;
 #X connect 22 0 14 0;
 #X connect 23 0 22 0;
-#X connect 24 0 28 0;
+#X connect 24 0 33 0;
 #X connect 25 0 3 0;
-#X connect 27 0 9 0;
-#X connect 28 0 1 0;
-#X coords 0 -1 1 1 110 195 1 500 250;
-#X restore 174 347 pd feedback;
-#X obj 174 744 newWave 25 10;
+#X connect 27 0 36 0;
+#X connect 30 0 32 1;
+#X connect 31 0 32 2;
+#X connect 33 0 1 0;
+#X connect 35 0 40 0;
+#X connect 35 1 41 0;
+#X connect 36 0 37 0;
+#X connect 36 1 38 0;
+#X connect 36 2 39 0;
+#X connect 37 0 35 0;
+#X connect 38 0 35 0;
+#X connect 39 0 35 0;
+#X connect 40 0 30 0;
+#X connect 41 0 31 0;
+#X connect 42 0 40 0;
+#X connect 42 1 41 0;
+#X connect 42 2 30 1;
+#X connect 42 3 31 1;
+#X coords 0 -1 1 1 180 195 1 500 250;
+#X restore 980 459 pd feedback;
 #X obj 764 40 path /home/hellocatfood/pd-externals/hellocatfood;
 #X obj 323 32 playlist all 260 220 {Helvetica 10 bold} #457782 yellow
 black red;
@@ -1538,7 +1563,7 @@ black red;
 #X coords 0 -1 1 1 110 190 2 100 100;
 #X restore 624 186 pd particles;
 #X text 741 259 sphere;
-#N canvas 525 177 450 300 mixmodes 0;
+#N canvas 1225 572 450 300 mixmodes 1;
 #X obj 100 100 cnv 15 115 70 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #X obj 105 104 vradio 15 1 0 4 empty empty empty 0 -8 0 10 -257985
@@ -1594,36 +1619,39 @@ black red;
 -1 -1 4900 1;
 #X obj 497 575 hsl 50 10 0 1 0 1 empty fading empty -2 -8 0 10 -4032
 -1 -1 4900 1;
-#X msg 314 708 4;
-#X msg 284 708 7;
 #X obj 284 678 loadbang;
 #X obj 966 341 nanokontrol;
 #X obj 323 266 player;
 #X obj 453 266 somepixeffects;
 #X obj 893 410 pix_chroma_key;
+#X obj 174 744 newWave 10 10;
+#X msg 284 708 4;
+#X msg 314 708 3;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
-#X connect 3 0 8 0;
-#X connect 3 1 8 0;
-#X connect 10 0 42 0;
-#X connect 11 0 22 0;
-#X connect 12 0 11 0;
-#X connect 13 0 23 2;
-#X connect 22 0 23 1;
-#X connect 23 0 34 0;
-#X connect 29 0 27 0;
-#X connect 29 0 26 0;
-#X connect 31 0 23 3;
-#X connect 31 0 23 0;
-#X connect 33 0 10 0;
-#X connect 33 0 12 0;
-#X connect 34 0 0 0;
-#X connect 35 0 34 1;
-#X connect 36 0 34 2;
-#X connect 37 0 34 3;
-#X connect 38 0 1 2;
-#X connect 39 0 1 1;
-#X connect 40 0 38 0;
-#X connect 40 0 39 0;
-#X connect 42 0 43 0;
-#X connect 43 0 23 4;
+#X connect 2 0 42 0;
+#X connect 2 1 42 3;
+#X connect 3 0 42 0;
+#X connect 3 1 42 0;
+#X connect 9 0 39 0;
+#X connect 10 0 21 0;
+#X connect 11 0 10 0;
+#X connect 12 0 22 2;
+#X connect 21 0 22 1;
+#X connect 22 0 33 0;
+#X connect 28 0 26 0;
+#X connect 28 0 25 0;
+#X connect 30 0 22 3;
+#X connect 30 0 22 0;
+#X connect 32 0 9 0;
+#X connect 32 0 11 0;
+#X connect 33 0 0 0;
+#X connect 34 0 33 1;
+#X connect 35 0 33 2;
+#X connect 36 0 33 3;
+#X connect 37 0 44 0;
+#X connect 37 0 43 0;
+#X connect 39 0 40 0;
+#X connect 40 0 22 4;
+#X connect 43 0 1 1;
+#X connect 44 0 1 2;
